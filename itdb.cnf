@@ -1,0 +1,33 @@
+[iTunes]
+; the location of your xml file
+xmlfile=/Users/cynthiacorrea/code/ark_itdb_ex/iTunes_Music_Library.xml
+; if your xml has 'weird' charcters in it it must be cleaned. yes/no
+clean=yes
+
+; database connection (this used to be called mysql but now it's client)
+; this will work with MySQLdb.connect(read_default_file=dbconfig)
+; this will work with mysql.connector.connect(read_default_file=dbconfig)
+[client]
+host=localhost
+database=itdb
+user=itdb
+password=itdb
+
+[user]
+; userid's allow you to store more than one user's data in the same database
+id=2
+
+[html]
+dir=/Users/cynthiacorrea/code/ark_itdb_ex
+; the base part of the urls (with no trailing /)
+base=/ark_itdb_ex
+script=itdb.cgi
+
+[templates]
+dir=/Users/cynthiacorrea/code/ark_itdb_ex/templates
+
+[remapping]
+; remap some urls to other urls
+s1=file:///Users/cynthiacorrea/code/ark_itdb_ex/templates/
+
+d1=http://somesite.com/mp3/
